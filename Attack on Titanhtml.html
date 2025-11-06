@@ -1,0 +1,48 @@
+<!doctype html>
+<html>
+<head>
+  <meta charset="utf-8">
+  <title>AnimeVerse -Attack on Titan</title>
+  <link rel="stylesheet" href="anime-AAn.css">
+</head>
+<body dir="rtl">
+
+  <div class="anime-container">
+    <h1>حمله به تایتان(Attack on Titan)</h1>
+    <img src="attack.jpg" alt="Attack on titan">
+    <details>
+	  <summary>خلاصه داستان</summary>
+	  <p>داستان، حول اِرن یِگِر (Eren Jaeger)، میکاسا اَکِرمَن (Mikasa Ackerman) و دوست این دو با نام آرمین آرلرت (Armin Arlert) می‌گذرد. پس از سقوط دیوار ماریا و شهر شیگانشینا (Shiganshina)توسط تایتان‌ها، مادر اِرن به دست یک تایتان کشته می‌شود و او قسم می‌خورد که انتقام مادرش را از تایتان‌ها بگیرد. او به همراه دوستانش به هنگ اکتشاف(Scout Regiment) ملحق می‌شوند تا تایتان‌ها را از بین ببرند.</p>
+	  </details>
+    <a href="Anime.html" class="back-link">بازگشت به صفحه اصلی</a>
+  </div>
+
+  <div class="season-buttons">
+    <button onclick="showSeason('season1')">فصل اول</button>
+    <button onclick="showSeason('season2')">فصل دوم</button>
+  </div>
+
+  <div class="season-section" id="season1">
+    <h2>فصل اول</h2>
+    <a href="لینک-دانلود-فصل1" class="download-button" download>دانلود قسمت اول</a>
+  </div>
+
+  <div class="season-section" id="season2">
+    <h2>فصل دوم</h2>
+    <a href="لینک-دانلود-فصل2"   class="download-button" download> قسمت اول</a>
+  </div>
+
+  <script>
+    function showSeason(seasonId) {
+      const allSeasons = document.querySelectorAll('.season-section');
+      allSeasons.forEach(section => section.style.display = 'none');
+      document.getElementById(seasonId).style.display = 'block';
+    }
+
+    window.onload = function() {
+      showSeason('season1');
+    }
+  </script>
+
+</body>
+</html>

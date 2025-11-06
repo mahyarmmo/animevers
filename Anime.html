@@ -1,0 +1,310 @@
+<!doctype html>
+<html>
+<head>
+<meta charset="utf-8">
+	<meta name="viewport" content="width=device-width , initial-scale=1.0"> 
+<title>Anime Verse</title>
+	<link rel="stylesheet" href="anime.css">
+	<link rel="icon" type="image/x-icon" href="apple-touch-icon.png">
+</head>
+
+<body>
+	
+	<header>
+	<div class="container">
+		<div class="logo">
+		<img src="Vibrant Logo with Manga Elements (1).jpg" alt="logo">
+		</div>
+		
+		<nav>
+		<ul>
+			<li><a href="#" onClick="showSection('home')">خانه</a></li>
+			<li><a href="#" onClick="showSection('categories')">دسته بندی ها</a></li>
+			<li><a href="#" onClick="showSection('archive')">آرشیو</a></li>
+			<li><a href="#" onClick="showSection('contact')">تماس با ما</a></li>
+			<li><a href="#" onClick="showSection('about')">درباره ما</a></li>
+			</ul>
+		</nav>
+	<div class="signup-box">
+		<button onClick="openSignupModal()">👤</button>
+		</div>
+		<div class="search-bar">
+		<input type="text" id="searchBox" placeholder="جستجو کنید" onKeyUp="searchAnime()">
+			<button onClick="searchAnime()">جستجو</button>
+			<div id="results"></div>
+			<div class="theme-switch-wrapper">
+			<label class="theme-switch" for="themeToggle">
+				<input type="checkbox" id="themeToggle" onChange="toggleDarkMode()">
+				<span class="slider round"></span>
+				</label>
+				<span id="themeLabel">حالت روز</span>
+				<span class="theme-icon">🌞</span>
+			</div>
+		</div>
+		</div>
+	</header>
+	<section id="home" class="content-section">
+		<div class="hero">
+	<h2>به AnimeVerse خوش آمدید!</h2>
+		<p>بهترین مرجع دانلود انیمه رایگان با دسته بندی های متنوع و آرشیو کامل.</p>
+			<div class="hero-buttons">
+			<button onClick="showSection('categories')">مرور ژانر ها</button>
+				<button onClick="showSection('archive')">دیدن آرشیو </button>
+			</div>
+		</div>
+<div class="popular-anime">
+  <h3>محبوب ترین انیمه ها</h3>
+  
+  <div class="anime-slider-wrapper">
+    <button class="slider-btn left" onclick="scrollSlider('left', 'animeSlider')">&#10094;</button>
+
+    <div class="anime-slider" id="animeSlider">
+      <div class="anime-card">
+        <img src="digital-standard.jpg" alt="demon slayer">
+        <h4>شیطان کش</h4>
+        <a href="demon slayer.html" class="watch-button">دیدن انیمه</a>
+      </div>
+      <div class="anime-card">
+        <img src="attack.jpg" alt="Attack on titan">
+        <h4>حمله به تایتان</h4>
+        <a href="Attack on Titanhtml.html" class="watch-button">دیدن انیمه</a>
+      </div>
+      <div class="anime-card">
+        <img src="one .jpg" alt="one piece">
+        <h4>وان پیس</h4>
+        <a href="one piece.html" class="watch-button">دیدن انیمه</a>
+      </div>
+<div class="anime-card">
+  <img src="142835.jpg" alt="naruto">
+  <h4>ناروتو</h4>
+  <a href="Naruto.html" class="watch-button">دیدن انیمه</a>
+</div>
+
+<div class="anime-card">
+  <img src="jujutso.jpg" alt="jujutsu kaisen">
+  <h4>جوجوتسو کایسن</h4>
+  <a href="Jujutsu Kaisen.html" class="watch-button">دیدن انیمه</a>
+</div>
+      <!-- کارت‌های بیشتر -->
+		<div class="anime-card">
+		<img src="death note.jpg" alt="death note">
+			<h4>دفترچه مرگ</h4>
+			<a href="#" class="watch-button">دیدن انیمه</a>
+		</div>
+		<div class="anime-card">
+		<img src="tokyo ghoul.jpg" alt="tokyo-ghoul">
+			<h4>توکیو غول</h4>
+			<a href="#" class="watch-button">دیدن انیمه</a>
+		</div>
+		<div class="anime-card">
+		<img src="bleach.jpg" alt="bleach">
+			<h4>بلیچ</h4>
+			<a href="#" class="watch-button">دیدن انیمه</a>
+		</div>
+		<div class="anime-card">
+		<img src="Boku-no-Hero-Akademia.jpg" alt="my hero akademia">
+			<h4>مدرسه قهرمانانه من</h4>
+			<a href="#" class="watch-button">دیدن انیمه</a>
+		</div>
+    </div>
+
+    <button class="slider-btn right" onclick="scrollSlider('right', 'animeSlider')">&#10095;</button>
+  </div>
+</div>
+<div class="popular-anime">
+		<h3>جدید ترین انیمه ها</h3>
+	<div class="anime-slider-wrapper">
+	<button class="slider-btn left" onclick="scrollSlider('left', 'fameSlider')">&#10094;</button>
+		<div class="anime-slider" id="fameSlider">
+		<div class="anime-card">
+			<img src="black-clover.jpg" alt="black clover">
+			<h4>شبدر سیاه</h4>
+			<a href="#" class="watch-button">دیدن انیمه</a>
+			</div>
+			<div class="anime-card">
+			<img src="Gachiakuta_vol_1.jpg" alt="Gachiakuta">
+				<h4>گاچیاکوتا</h4>
+				<a href="" class="watch-button">دیدن انیمه</a>
+			</div>
+			<div class="anime-card">
+			<img src="Solo_Leveling.jpg" alt="Solo-leveling">
+				<h4>سولو لولینگ</h4>
+				<a href="#" class="watch-button">دیدن انیمه</a>
+			</div>
+			<div class="anime-card">
+			<img src="Medalist1.jpg" alt="Medalist">
+				<h4>مدال آور</h4>
+				<a href="#" class="watch-button">دیدن انیمه</a>
+			</div>
+		</div>
+		<button class="slider-btn right" onclick="scrollSlider('right', 'fameSlider')">&#10095;</button>
+	</div>
+		</div>
+	</section>
+	<section id="categories" class="content-section">
+  <h2>دسته بندی ها</h2>
+  <div class="dropdown">
+    <button onClick="toggleDropdown()" class="dropdown-button">انتخاب ژانر</button>
+    <div id="genreDropdown" class="dropdown-content">
+		
+      <a href="#" onClick="filterAnime('action')">اکشن</a>
+      <a href="#" onClick="filterAnime('adventure')">ماجراجویی</a>
+      <a href="#" onClick="filterAnime('fantasy')">فانتزی</a>
+      <a href="#" onClick="filterAnime('drama')">درام</a>
+      <a href="#" onClick="filterAnime('horror')">ترسناک</a>
+      <a href="#" onClick="filterAnime('comedy')">کمدی</a>
+      <a href="#" onClick="filterAnime('romance')">عاشقانه</a>
+    </div>
+	  
+  </div>
+		<div class="mahyar">
+	  <button onClick="showAllGenres()" id="showAllBtn" style="display: none">نمایش همه ژانر ها</button>
+	  </div>
+
+  <!-- بخش اکشن -->
+  <div class="genre-section" data-genre="action">
+    <h2>اکشن</h2>
+    <div class="anime-slider-wrapper">
+      <button class="slider-btn left" onclick="scrollSlider('left', 'actionSlider')">&#10094;</button>
+      <div class="anime-slider" id="actionSlider">
+        <div class="anime-card">
+          <img src="142835.jpg" alt="naruto">
+          <h4>ناروتو</h4>
+          <a href="Naruto.html" class="watch-button">دیدن انیمه</a>
+        </div>
+        <div class="anime-card">
+          <img src="attack.jpg" alt="Attack on titan">
+          <h4>حمله به تایتان</h4>
+          <a href="Attack on Titanhtml.html" class="watch-button">دیدن انیمه</a>
+        </div>
+        <div class="anime-card">
+          <img src="digital-standard.jpg" alt="demon slayer">
+          <h4>شیطان کش</h4>
+          <a href="demon slayer.html" class="watch-button">دیدن انیمه</a>
+        </div>
+        <div class="anime-card">
+          <img src="jujutso.jpg" alt="jujutsu kaisen">
+          <h4>جوجوتسو کایسن</h4>
+          <a href="Jujutsu Kaisen.html" class="watch-button">دیدن انیمه</a>
+        </div>
+      </div>
+      <button class="slider-btn right" onclick="scrollSlider('right', 'actionSlider')">&#10095;</button>
+    </div>
+  </div>
+
+  <!-- بخش ماجراجویی -->
+  <div class="genre-section" data-genre="adventure">
+    <h2>ماجراجویی</h2>
+    <div class="anime-slider-wrapper">
+      <button class="slider-btn left" onclick="scrollSlider('left', 'adventureSlider')">&#10094;</button>
+      <div class="anime-slider" id="adventureSlider">
+        <div class="anime-card">
+          <img src="one .jpg" alt="one piece">
+          <h4>وان پیس</h4>
+          <a href="one piece.html" class="watch-button">دیدن انیمه</a>
+        </div>
+      </div>
+      <button class="slider-btn right" onclick="scrollSlider('right', 'adventureSlider')">&#10095;</button>
+    </div>
+  </div>
+
+  <!-- بخش فانتزی -->
+  <div class="genre-section" data-genre="fantasy">
+    <h2>فانتزی</h2>
+    <div class="anime-slider-wrapper">
+      <button class="slider-btn left" onclick="scrollSlider('left', 'fantezislider')">&#10094;</button>
+      <div class="anime-slider" id="fantezislider">
+        <div class="anime-card">
+          <img src="Fullmetal.jpg" alt="Fullmetal Alchemist: Brotherhood">
+          <h4>کیمیاگر تمام فلزی: برادری</h4>
+          <a href="#" class="watch-button">دیدن انیمه</a>
+        </div>
+      </div>
+      <button class="slider-btn right" onclick="scrollSlider('right', 'fantezislider')">&#10095;</button>
+    </div>
+  </div>
+</section>
+
+	<section id="archive" class="content-section">
+	<h2>آرشیو</h2>
+		<p>انیمه های آرشیوی دسته بندی شده بر اساس سال تولید و وضعیت پخش.</p>
+		<div class="year-block">
+		<h3>2023</h3>
+			<div class="anime-cards">
+			<div class="anime-card">
+	<img src="Solo_Leveling.jpg" alt="solo Leveling">
+				<h4>سولو لولینگ</h4>
+				<p>وضعیت :درحال پخش|سال:2023</p>
+				<a href="#" class="watch-button">دیدن انیمه</a>
+				
+				</div>
+				<div class="anime-card">
+				<img src="Medalist1.jpg" alt="Medalist">
+				<h4>مدال آور</h4>
+					<p>وضعیت:تمام شده|سال:2023</p>
+					 <a href="#" class="watch-button">دیدن انیمه</a>
+				</div>
+			</div>
+		</div>
+		<div class="year-block">
+		<h3>2022</h3>
+			<div class="anime-cards">
+			<div class="anime-card">
+				<img src="jujutso.jpg" alt="Jujutsu Kaisen">
+				<h4>جوجوتسو کایسن</h4>
+				<p> وضعیت:تمام شده|سال:2022</p>
+				<a href="Jujutsu Kaisen.html" class="watch-button">دیدن انیمه</a>
+				</div>
+			</div>
+		</div>
+	</section>
+	
+	<section id="contact" class="content-section">
+	<h2>تماس با ما</h2>
+		<p>برای ارتباط با مدیریت Anime Verse به .... ایمل بزنید</p>
+	</section>
+	<section id="about" class="content-section">
+	<h2>درباره ما</h2>
+		<p></p>
+	</section>
+	<!-- مرحله شماره تلفن -->
+<div id="phoneStep" class="modal" style="display:none;">
+  <div class="modal-content">
+	  <button class="modal-exit" onclick="closephoneStep()">✖</button>
+    <h2>شماره موبایل خود را وارد کنید</h2>
+    <form id="phoneForm">
+      <input type="tel" id="userPhone" placeholder="شماره موبایل" required />
+      <button type="submit">ارسال کد</button>
+    </form>
+  </div>
+</div>
+
+<!-- مرحله کد تأیید -->
+<div id="codeStep" class="modal" style="display: none;">
+  <div class="modal-content">
+    <h2>کد تأیید را وارد کنید</h2>
+    <form id="codeForm">
+      <input type="text" id="confirmCode" placeholder="کد پیامک" required />
+      <button type="submit">تأیید</button>
+		<button id="resendCodeBtn" disabled>ارسال مجدد کد (60)</button>
+    </form>
+  </div>
+</div>
+	<div id="signupModal" class="modal">
+  <div class="modal-content">
+    <span class="close-btn">&times;</span>
+	  <button class="modal-exit" onclick="closeSignupModal()">✖</button>
+    <h2>ثبت‌نام کاربر</h2>
+    <form id="signupForm">
+      <input type="text" placeholder="نام کاربری" required />
+      <input type="password" placeholder="رمز عبور" required />
+      <button type="submit">ثبت‌نام</button>
+    </form>
+	  	<div style="text-align: left; margin-top: px;">
+  <button type="button" class="switch-login" onClick="switchToLogin()">ورود به حساب کاربری</button>
+</div>
+		</div>
+</div>
+	<script src="anime.js"></script>
+</body>
+</html>
